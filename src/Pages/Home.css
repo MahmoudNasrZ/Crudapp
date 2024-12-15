@@ -1,0 +1,45 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin-left: 24px;
+  display: inline-block;
+  width: 5px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+
+td,
+tr {
+  animation: animate-in 1s cubic-bezier(0.44, -0.19, 0.41, 0.78);
+}
+@keyframes l5 {
+  0% {
+    box-shadow: 20px 0 #000, -20px 0 #0002;
+    background: #000;
+  }
+  33% {
+    box-shadow: 20px 0 #000, -20px 0 #0002;
+    background: #0002;
+  }
+  66% {
+    box-shadow: 20px 0 #0002, -20px 0 #000;
+    background: #0002;
+  }
+  100% {
+    box-shadow: 20px 0 #0002, -20px 0 #000;
+    background: #000;
+  }
+}
+
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+    border: transparent 1px solid;
+  }
+  to {
+    opacity: 1;
+    border: transparent 1px solid;
+    transform: translateY(0);
+  }
+}

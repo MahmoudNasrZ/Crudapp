@@ -1,0 +1,74 @@
+.blueBox {
+  /* blueboxEffect start*/
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+  height: 100%;
+  /* blueboxEffect end*/
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-shadow: 1px 1px 9px black;
+}
+/* blueboxEffect */
+.blueBox::before {
+  /* blueboxEffect start*/
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: 0.5s;
+  /* blueboxEffect end*/
+  background-color: aqua;
+  border-radius: 8px;
+  color: white;
+}
+/* blueboxEffect start*/
+.blueBox:hover::before {
+  width: 110%;
+}
+/* blueboxEffect endsHere */
+
+.blueBox:hover {
+  color: black;
+  text-shadow: 1px 1px 9px black;
+}
+/* NavBar Animation */
+.navbar-expand .navbar-nav .Square {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  top: 0;
+  left: 10px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background-image: linear-gradient(45deg, #4f1919, #ff3333);
+  border-radius: 5px;
+}
+.navbar-expand .navbar-nav {
+  gap: 15px;
+}
+.navbar-nav .nav-link.active {
+  color: white;
+  font-weight: 400;
+  text-shadow: 1px 1px 9px black;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  z-index: 1;
+}
+.navbar-expand .navbar-nav .nav-link:nth-child(1).active ~ span {
+  left: 10px;
+}
+
+.navbar-expand .navbar-nav .nav-link:nth-child(2).active ~ span {
+  left: calc(10px + 55px + 15px);
+}
+.navbar-expand .navbar-nav .nav-link:nth-child(3).active ~ span {
+  left: calc(10px + 115px + 15px);
+}
