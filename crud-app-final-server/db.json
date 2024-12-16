@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "React",
+      "description": "Learn React"
+    },
+    {
+      "id": 2,
+      "title": "js",
+      "description": "Learn js"
+    },
+    {
+      "id": 3,
+      "title": "React",
+      "description": "Learn React"
+    },
+    {
+      "id": 4,
+      "title": "js",
+      "description": "Learn js"
+    },
+    {
+      "id": 5,
+      "title": "React",
+      "description": "Learn React"
+    },
+    {
+      "id": 6,
+      "title": "js",
+      "description": "Learn js"
+    },
+    {
+      "id": 7,
+      "title": "React",
+      "description": "Learn React"
+    },
+    {
+      "id": 8,
+      "title": "js",
+      "description": "Learn js"
+    }
+  ]
+}
